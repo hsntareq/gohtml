@@ -1,0 +1,24 @@
+// Variables
+$brand-black: #000000;
+$brand-white: #ffffff;
+$brand-pink: #fd57ad;
+$brand-dark-blue: #01245a;
+$brand-blue: #377db8;
+$brand-light-blue: #0092e4;
+$brand-green-sea: #00bcd4;
+$brand-grey-1: #f3f3f3;
+$brand-grey-2: #f5f5f5;
+$text-grey: #484848;
+
+:root {
+	--brand-black: #{$brand-black};
+	--brand-white: #{$brand-white};
+	--brand-pink: #{$brand-pink};
+	--brand-dark-blue: #{$brand-dark-blue};
+	--brand-blue: #{$brand-blue};
+	--brand-light-blue: #{$brand-light-blue};
+	--brand-green-sea: #{$brand-green-sea};
+	--brand-grey-1: #{$brand-grey-1};
+	--brand-grey-2: #{$brand-grey-2};
+	--text-grey: #{$text-grey};
+}

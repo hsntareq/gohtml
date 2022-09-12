@@ -1,0 +1,132 @@
+.go-btn {
+	@extend .go-text-18-m;
+	display: inline-flex;
+	align-items: center;
+	color: var(--brand-white);
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 8px 16px;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: color 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out;
+
+	&[disabled],
+	&.disabled {
+		pointer-events: none;
+		color: #858689;
+		border-color: #e9e9ea;
+		background-color: #e9e9ea;
+	}
+
+	&-block {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	&-md {
+		padding: 8px 24px;
+		border-radius: 70px;
+	}
+	&-lg {
+		padding: 14px 32px;
+		border-radius: 100px;
+	}
+
+	&-brand-pink {
+		border-color: var(--brand-pink);
+		background-color: var(--brand-pink);
+		color: #ffffff;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: #ffffff;
+			border-color: darken($brand-pink, 5);
+			background-color: darken($brand-pink, 5);
+		}
+	}
+	&-brand-blue {
+		border-color: var(--brand-blue);
+		background-color: var(--brand-blue);
+		color: #ffffff;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: #ffffff;
+			border-color: darken($brand-blue, 5);
+			background-color: darken($brand-blue, 5);
+		}
+	}
+	&-brand-blue-outline {
+		border-color: var(--brand-blue);
+		background-color: transparent;
+		color: var(--brand-blue);
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: #ffffff;
+			border-color: var(--brand-blue);
+			background-color: var(--brand-blue);
+		}
+	}
+	&-brand-pink-outline {
+		border-color: var(--brand-pink);
+		background-color: transparent;
+		color: var(--brand-pink);
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: #ffffff;
+			border-color: var(--brand-pink);
+			background-color: var(--brand-pink);
+		}
+	}
+	&-brand-pink-text {
+		border-color: transparent;
+		background-color: transparent;
+		color: var(--brand-pink);
+	}
+	&-brand-blue-text {
+		border-color: transparent;
+		background-color: transparent;
+		color: var(--brand-blue);
+	}
+
+	&-icon {
+		gap: 4px;
+		i,
+		span {
+			color: var(--brand-white);
+		}
+	}
+
+	&-iconic {
+		border-radius: 100%;
+		align-items: center;
+		justify-content: center;
+		padding: unset;
+
+		i,
+		span {
+			color: var(--brand-white);
+		}
+
+		&.go-btn-md {
+			width: 44px;
+			height: 44px;
+		}
+
+		&.go-btn-lg {
+			width: 56px;
+			height: 56px;
+		}
+	}
+}

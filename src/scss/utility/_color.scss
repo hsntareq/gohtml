@@ -1,0 +1,22 @@
+// Colors
+$colors: (
+	'black' var(--brand-black),
+	'white' var(--brand-white),
+	'pink' var(--brand-pink),
+	'dark-blue' var(--brand-dark-blue),
+	'blue' var(--brand-blue),
+	'light-blue' var(--brand-light-blue),
+	'green-sea' var(--brand-green-sea),
+	'grey-1' var(--brand-grey-1),
+	'grey-2' var(--brand-grey-2),
+	'text-grey' var(--text-gre)
+);
+
+@each $i, $j in $colors {
+	.go-c-#{$i} {
+		color: $j;
+	}
+	.go-bg-#{$i} {
+		background-color: $j;
+	}
+}
